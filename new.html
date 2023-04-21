@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="progress">
+        <span class="bar">MOTEL GALLERY</span>
+    </div>
+            <div class="cont">
+                <section class="sec-1">
+                    <h4>BEDROOM</h4>
+                </section>
+                <section class="sec-2">
+                    <h5>WASHROOM</h5>
+                </section>
+                <section class="sec-3">
+                    <h6>NIGHT VIEW</h6>
+                </section>
+                <section class="sec-4">
+                    <h6>INTERIOR</h6>
+                </section>
+                <section class="sec-5">
+                    <h6>PARTY VIEW</h6>
+                </section>
+                <section class="sec-6">
+                    <h6>CHILL</h6>
+                </section>
+
+
+            </div>
+        
+    
+  
+    <script>
+        const bodyEl = document.body
+        const barEl = document.querySelector('.bar')
+        const updateBar = () => {
+        let scrollPos =(window.scrollY / (bodyEl.scrollHeight - window.innerHeight)) * 100
+        barEl.style.width = `${scrollPos}%`
+        requestAnimationFrame(updateBar)
+        }
+        updateBar();
+
+        
+    </script>
+    <button class="kav">
+        
+            <a href="/"> Home</a>
+        
+    </button>
+
+
+    
+</body>
+</html>
